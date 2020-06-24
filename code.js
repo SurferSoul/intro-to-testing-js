@@ -14,5 +14,15 @@ function sayHello(input) {
 
 //isFive function
 function isFive(input) {
-    return input === "5";
+    return input == 5;
 }
+
+//isEven function
+function isEven(input) {
+    return input % 2 === 0;
+// return typeof input === "number";
+    // return typeof input === "boolean";
+ }
+
+console.log(isEven())
+
