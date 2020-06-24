@@ -5,6 +5,9 @@ const helloWorld = function() {
 
 //exercise sayHello
 function sayHello(input) {
+    if (typeof input === "boolean" ) {
+        return "Hello, World!";
+    } else {
     return "Hello, " + input + "!"
+    }
 }
-
