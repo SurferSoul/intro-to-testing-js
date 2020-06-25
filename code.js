@@ -20,9 +20,16 @@ function isFive(input) {
 //isEven function
 function isEven(input) {
     return input % 2 === 0;
-// return typeof input === "number";
-    // return typeof input === "boolean";
  }
+ 
+//isVowel
+function isVowel(vowel) {
+    let vow = ["a", "e", "i", "o", "u", "A", "E", "Y", "O", "U"];
+    if (vow.indexOf(vowel) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-console.log(isEven())
 

@@ -87,3 +87,35 @@ describe("isEven", function () {
         expect(isEven()).toBe(false);
     });
 });
+
+//isVowel function
+describe("isVowel", function () {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe("function");
+    });
+    it('should return a boolean when called', function () {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+    it('should return true when passed "a" is executed', function () {
+        expect(isVowel("a")).toBe(true);
+    });
+    it('should return true when passed "A" is executed', function () {
+        expect(isVowel("A")).toBe(true);
+    });
+    it('should return false when passed "y" is executed', function () {
+        expect(isVowel("y")).toBe(false);
+    });
+    it('should return false when passed 4 is executed', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when passed true is executed', function () {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('should return false when passed false is executed', function () {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false when passed () is executed', function () {
+        expect(isVowel()).toBe(false);
+    });
+
+})
