@@ -32,4 +32,13 @@ function isVowel(vowel) {
     }
 }
 
+//add function
+function add(num1, num2) {
+    if(NaN){
+        return false
+    } else {
+        return parseFloat(num1) + parseFloat(num2)
+    }
+}
 
+console.log(add("3","3"))

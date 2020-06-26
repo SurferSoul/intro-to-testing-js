@@ -117,5 +117,33 @@ describe("isVowel", function () {
     it('should return false when passed () is executed', function () {
         expect(isVowel()).toBe(false);
     });
+});
 
-})
+//add function
+
+describe("add", function () {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    it('should return 5 when 2, 3 are added', function () {
+        expect(add(2,3)).toBe(5);
+    });
+    it('should return 11 when "5, 6 are added', function () {
+        expect(add("5",6)).toBe(11);
+    });
+    it('should return 6 when "-4", "10" are added', function () {
+        expect(add("-4","10")).toBe(6);
+    })
+    it('should return -12 when -3, -9 are added', function () {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('should return NaN when passed "banana", "split" is executed', function () {
+        expect(add(NaN)).toBeNaN();
+    });
+    it('should return NaN when passed 2, "apples" is executed', function () {
+        expect(add(NaN)).toBeNaN();
+    });
+    it('should return NaN when when add() is executed', function () {
+        expect(add(NaN)).toBeNaN();
+    });
+});
